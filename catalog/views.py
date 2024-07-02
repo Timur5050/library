@@ -1,3 +1,8 @@
-from django.shortcuts import render
+import datetime
+from django.http import HttpRequest, HttpResponse
 
-# Create your views here.
+
+def index(request: HttpRequest) -> HttpResponse:
+    return HttpResponse("<html>"
+                        "<h1>welcome to library</h1>"
+                        "</html>")
